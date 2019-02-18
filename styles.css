@@ -1,0 +1,119 @@
+@page {
+  size: 148mm 210mm;
+  margin: 0mm 1.5mm 0mm 12mm;
+  div.page { page-break-inside: avoid; }
+}
+
+@page:left {
+  margin: 0mm 12mm 0mm 1.5mm;
+}
+
+div.page {
+  font-family: Roboto,Helvetica,sans-serif;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  width: 137mm;
+}
+
+div.page>div:nth-child(even) {
+  background-color: #E8E8E8;
+}
+
+div.frame {
+  height: 104mm;
+}
+
+table {
+  width: 100%;
+  border-spacing: 5px 2px;
+  padding-top: 5px;
+}
+
+td.input {
+  font-family: 'Roboto Condensed',Roboto,Helvetica,sans-serif;
+  font-size: 10px;
+  border-bottom: 1px solid #333333;
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  height: 1.7em;
+}
+
+
+div.input {
+  font-family: 'Roboto Condensed',Roboto,Helvetica,sans-serif;
+  font-size: 10px;
+  border-bottom: 1px solid #333333;
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  min-height: 1.7em;
+  display: flex;
+  align-items: flex-end;
+}
+
+div.statbox {
+  font-family: Roboto,Helvetica,sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px 0 0 0;
+  position: relative;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 3px 0;
+}
+
+ul.ability-list {
+  margin: 0;
+  clear: left;
+}
+
+li.ability {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+td.icon-box {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  height: 21px;
+  width: 46px;
+  display: flex;
+  align-items: flex-end;
+}
+
+td.icon-box>img {
+  vertical-align: center;
+  height: 21px;
+  width: 21px;
+}
+
+div.general-box {
+  background: top center transparent url("img/small-stat.svg") no-repeat;
+}
+
+div.ability-score {
+  background: top center transparent url("img/ability-score.svg") no-repeat;
+}
+
+div.ac-box {
+  background: center center transparent url("img/shield.svg") no-repeat;
+}
+
+div.initiative-box {
+  background: center center transparent url("img/initiative.svg") no-repeat;
+}
