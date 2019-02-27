@@ -98,12 +98,8 @@ td.icon-box {
 
 td.icon-box>img {
   vertical-align: center;
-  height: 21px;
-  width: 21px;
-}
-
-div.general-box {
-  background: top center transparent url("img/small-stat.svg") no-repeat;
+  height: 20px;
+  width: 20px;
 }
 
 div.ability-score {
@@ -111,9 +107,5 @@ div.ability-score {
 }
 
 div.ac-box {
-  background: center center transparent url("img/shield.svg") no-repeat;
-}
-
-div.initiative-box {
-  background: center center transparent url("img/initiative.svg") no-repeat;
+  background: top center transparent url("img/shield.svg") no-repeat;
 }
