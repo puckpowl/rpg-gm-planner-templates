@@ -1,3 +1,10 @@
+@media print {
+  * { 
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact; 
+  }
+}
+
 @page {
   size: 148mm 210mm;
   margin: 0mm 1.5mm 0mm 12mm;
@@ -16,14 +23,15 @@ div.page {
   font-size: 12px;
   font-weight: bold;
   width: 137mm;
+  height: 100%;
+}
+
+div.page:first-child {
+  padding: 0 0 5px 0;
 }
 
 div.page>div:nth-child(even) {
   background-color: #E8E8E8;
-}
-
-div.frame {
-  height: 104mm;
 }
 
 table {
@@ -32,28 +40,19 @@ table {
   padding-top: 5px;
 }
 
-td.input {
+.input {
   font-family: 'Roboto Condensed',Roboto,Helvetica,sans-serif;
   font-size: 10px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #bbb;
   text-align: left;
   text-transform: none;
   font-weight: normal;
   height: 1.7em;
 }
 
-
 div.input {
-  font-family: 'Roboto Condensed',Roboto,Helvetica,sans-serif;
-  font-size: 10px;
-  border-bottom: 1px solid #333333;
+  display: inline-block;
   width: 100%;
-  text-align: left;
-  text-transform: none;
-  font-weight: normal;
-  min-height: 1.7em;
-  display: flex;
-  align-items: flex-end;
 }
 
 div.statbox {
@@ -108,4 +107,16 @@ div.ability-score {
 
 div.ac-box {
   background: top center transparent url("img/shield.svg") no-repeat;
+}
+
+td.mapgrid {
+  border: 1px solid; 
+  border-radius: 5px; 
+  width: 100%; 
+  height: 150mm;
+}
+
+.mapgrid>svg {
+  stroke: #bbb;
+  stroke-width: 1;
 }
